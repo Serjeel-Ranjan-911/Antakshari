@@ -1,9 +1,7 @@
 {
   "name": "antakshari",
-  "version": "0.1.0",
-  "homepage": "https://gitname.github.io/antakshari",
+  "version": "0.2.0",
   "author": "Serjeel Ranjan",
-  "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -15,11 +13,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-scripts": "5.0.1",
-    "swiper": "^8.3.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,8 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
