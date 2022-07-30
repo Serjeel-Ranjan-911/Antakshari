@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import "./App.css";
+
+import { alphabets, songs } from "./data";
+import Song from "./Components/song";
+import AlphabetSelector from "./Components/alphabetSelector";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [pageColor, setPageColor] = useState("#ff2929d9");
+	const [selectedAlphabet, setSelectedAlphabet] = useState("क");
+
+	useEffect(() => {
+		console.log(selectedAlphabet);
+	}, [selectedAlphabet]);
+
+	return (
+		<div style={{ backgroundColor: pageColor }} className="App">
+			<Song
+				selectedAlphabet={selectedAlphabet}
+				changePageColor={(color) => setPageColor(color)}
+			/>
+			<AlphabetSelector
+				selectedAlphabet={selectedAlphabet}
+				changeAlphabet={(alpha) => setSelectedAlphabet(alpha)}
+			/>
+		</div>
+	);
 }
 
 export default App;
