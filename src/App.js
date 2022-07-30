@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-import { alphabets, songs } from "./data";
 import Song from "./Components/song";
 import AlphabetSelector from "./Components/alphabetSelector";
 
