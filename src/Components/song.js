@@ -32,22 +32,31 @@ const Song = (props) => {
 
 	return (
 		<>
-			<h1 className="songTitle">{songData.startPhrase}</h1>
-			<div class="card">
-				{songData.source.length > 0 && (
-					<iframe
-						width="100%"
-						height="100%"
-						src={songData.source + `?start=${songData.start}`}
-						title={songData.title}
-					></iframe>
-				)}
+			{songs[props.selectedAlphabet].length !== 0 ? (
+				<>
+					<h1 className="songTitle">{songData.startPhrase}</h1>
+					<div class="card">
+						{songData.source.length > 0 && (
+							<iframe
+								width="100%"
+								height="100%"
+								src={songData.source + `?start=${songData.start}`}
+								title={songData.title}
+							></iframe>
+						)}
 
-				<p style={{ backgroundColor: songData.primaryColor }} class="alphabet">
-					{props.selectedAlphabet}
-				</p>
-			</div>
-			<MdOutlineShuffleOn className="nextIcon" onClick={changeSong} />
+						<p
+							style={{ backgroundColor: songData.primaryColor }}
+							class="alphabet"
+						>
+							{props.selectedAlphabet}
+						</p>
+					</div>
+					<MdOutlineShuffleOn className="nextIcon" onClick={changeSong} />
+				</>
+			) : (
+				<h1 className="songTitle">No suggestions 😟</h1>
+			)}
 		</>
 	);
 };
