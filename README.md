@@ -1,1 +1,1 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2653f8a2-3501-4349-ace3-0d567af936a4/deploy-status)](https://app.netlify.com/sites/serjeel-antakshari/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2653f8a2-3501-4349-ace3-0d567af936a4/deploy-status)](https://serjeel-antakshari.netlify.app/)
