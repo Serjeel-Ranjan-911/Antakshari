@@ -102,6 +102,13 @@ export const songs = {
 			source: "https://www.youtube.com/embed/7KuDBVO8OY0",
 			startPhrase: "Janam janam janam...",
 		},
+		{
+			title: "Aadat",
+			start: "49",
+			primaryColor: "#FEC478",
+			source: "https://www.youtube.com/embed/IoYy3uFXhDY",
+			startPhrase: "Juda hoke bhi...",
+		},
 	],
 	झ: [],
 	ञ: [],
@@ -167,6 +174,13 @@ export const songs = {
 			source: "https://www.youtube.com/embed/2TcOnvGsb-k",
 			startPhrase: "Tujko mai rakh lu...",
 		},
+		{
+			title: "Tere Bin",
+			start: "17",
+			primaryColor: "#9E1104",
+			source: "https://www.youtube.com/embed/7jbqQi5XSP4	",
+			startPhrase: "Tere bin main yu...",
+		},
 	],
 	थ: [],
 	द: [
@@ -176,6 +190,13 @@ export const songs = {
 			primaryColor: "#D83936c2",
 			source: "https://www.youtube.com/embed/t7Svszhn1HQ",
 			startPhrase: "Dil ibaadat kar...",
+		},
+		{
+			title: "Aadat Original",
+			start: "69",
+			primaryColor: "#425F44",
+			source: "https://www.youtube.com/embed/-MzYz44FWxI",
+			startPhrase: "Door jitna bhi tum...",
 		},
 	],
 	ध: [
